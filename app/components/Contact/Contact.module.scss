@@ -1,0 +1,36 @@
+.contacts {
+  display: flex;
+  gap: var(--space-6-x);
+
+  .contact {
+    flex: 1 0 auto;
+
+    .name {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    .info {
+      margin-block-start: var(--space-2-x);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2-x);
+
+      a {
+        transition: var(--transition-fast);
+        outline: var(--focus-outline);
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+          color: var(--color-yellow);
+          border-bottom-color: var(--color-text-light);
+        }
+
+        &:focus-visible {
+          outline-color: var(--color-white);
+          outline-offset: 4px;
+        }
+      }
+    }
+  }
+}

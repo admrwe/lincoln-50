@@ -1,0 +1,29 @@
+.button {
+  font-family: var(--font-volkhov);
+  font-size: 1.5rem;
+  padding-inline: var(--space-2-x);
+  padding-block: var(--space-1-x);
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  border-radius: var(--border-radius);
+  transition: var(--transition-fast);
+  outline: var(--focus-outline);
+
+  span {
+    transition: var(--transition-fast);
+  }
+
+  &:hover {
+    border-color: var(--color-yellow);
+    transform: scale(1.1);
+
+    span {
+      padding-inline-start: var(--space-3-x);
+    }
+  }
+
+  &:focus-visible {
+    outline-color: var(--color-white);
+    outline-offset: 4px;
+  }
+}

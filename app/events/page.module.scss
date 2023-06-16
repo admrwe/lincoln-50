@@ -1,0 +1,50 @@
+.venueName {
+  font-size: 2rem;
+}
+
+.address {
+  margin-block-start: var(--space-2-x);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2-x);
+  margin-block-end: var(--space-4-x);
+}
+
+.section {
+  &:not(:first-of-type) {
+    margin-block-start: var(--space-6-x);
+  }
+
+  .sectionTitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-yellow);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-block-end: var(--space-1-x);
+  }
+
+  section:not(:last-child) {
+    margin-block-end: var(--space-3-x);
+  }
+
+  h4 {
+    font-size: 1.75rem;
+    margin-block-end: var(--space-2-x);
+  }
+}
+
+.location {
+  margin-block-start: var(--space-4-x);
+}
+
+.actions {
+  margin-block-start: var(--space-4-x);
+}
+
+.map {
+  margin-block-start: var(--space-4-x);
+}

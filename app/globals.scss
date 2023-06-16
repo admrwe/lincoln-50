@@ -1,0 +1,62 @@
+:root {
+  --font-size: 16px;
+
+  --space-base: 8px;
+  --space-quarter-x: calc(var(--space-base) / 4);
+  --space-half-x: calc(var(--space-base) / 2);
+  --space-1-x: var(--space-base);
+  --space-2-x: calc(var(--space-base) * 2);
+  --space-3-x: calc(var(--space-base) * 3);
+  --space-4-x: calc(var(--space-base) * 4);
+  --space-6-x: calc(var(--space-base) * 6);
+  --space-8-x: calc(var(--space-base) * 8);
+  --space-10-x: calc(var(--space-base) * 10);
+  --space-12-x: calc(var(--space-base) * 12);
+  --space-16-x: calc(var(--space-base) * 16);
+
+  --color-red: #a03239;
+  --color-yellow: #fbd39a;
+  --color-dark-blue: #203038;
+  --color-white: #dce9f1;
+
+  --color-text-light: var(--color-white);
+  --color-text-dark: var(--color-dark-blue);
+
+  --border-radius: 0.5rem;
+
+  --transition-fast: all 200ms ease-in-out;
+
+  --focus-outline: 2px dashed transparent;
+  --max-width: 50rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-size: 2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

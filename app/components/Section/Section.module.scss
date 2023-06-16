@@ -1,0 +1,51 @@
+.homeSection {
+  padding-inline: var(--space-6-x);
+  padding-block: var(--space-12-x);
+  text-align: start;
+  font-size: 1.5rem;
+  background-color: var(--color-dark-blue);
+  color: var(--color-text-light);
+
+  .container {
+    max-inline-size: var(--max-width);
+    margin-inline: auto;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2-x);
+    font-family: var(--font-unbounded);
+    font-size: 2.25rem;
+    margin-block-end: var(--space-6-x);
+
+    .sub {
+      color: var(--color-yellow);
+      font-size: 2.75rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4-x);
+  }
+
+  &.yellow {
+    background-color: var(--color-yellow);
+    color: var(--color-text-dark);
+
+    .title {
+      color: var(--color-red);
+    }
+  }
+
+  &.blue {
+    background-color: var(--color-dark-blue);
+    color: var(--color-text-light);
+
+    .title {
+      color: var(--color-yellow);
+    }
+  }
+}
