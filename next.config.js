@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/lincoln-50",
+  // basePath: "/",
   experimental: {
     appDir: true,
   },
