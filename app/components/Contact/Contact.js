@@ -21,7 +21,7 @@ export const Contact = () => {
       <div className={styles.contacts}>
         {contacts.map((contact) => {
           return (
-            <div className={styles.contact}>
+            <div className={styles.contact} key={contact.name}>
               <div className={styles.name}>{contact.name}</div>
               <div className={styles.info}>
                 {contact.phone && (
